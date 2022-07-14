@@ -45,10 +45,12 @@ public class Main {
         floor2.clean();
 
         // FLOOR 3 RoomIS UNABLE TO BE USED AS IT IS UNDER CONSTRUCTION
-        // WE WILL REMOVE ITS ROOMS TO ACCOMODATE FOR THIS
+        // WE WILL REMOVE ITS ROOMS TO ACCOMODATE FOR THIS AND REPORT
         floor3.removeHotelRoom(room7);
         floor3.removeHotelRoom(room8);
         floor3.removeHotelRoom(room9);
+
+        floor3.removeAllForConstruction();
 
     }
 }

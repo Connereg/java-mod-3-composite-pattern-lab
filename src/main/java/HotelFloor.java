@@ -23,4 +23,10 @@ public class HotelFloor implements HotelRoomInterface {
     public void removeHotelRoom(HotelRoomInterface hotelRoom) {
         hotelRooms.remove(hotelRoom);
     }
+
+    public void removeAllForConstruction() {
+        hotelRooms.forEach(child ->{
+            child.removeForConstruction();
+        });
+    }
 }

@@ -8,4 +8,6 @@ public class HotelRoom implements HotelRoomInterface {
         Logger.getInstance().log("Cleaned Room");
     }
 
+    public void removeForConstruction() { Logger.getInstance().log("Room under construction, cannot be booked"); }
+
 }
